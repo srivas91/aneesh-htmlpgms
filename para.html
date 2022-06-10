@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p
+        {
+            color:magenta;
+        }
+        p::first-letter
+        {
+            font-size: 24pt;
+            text-transform: uppercase;
+        }
+        p::first-line
+        {
+            color:blue;
+        }
+        p:read-write
+        {
+            background-color: yellow;
+        }
+        p:read-only
+        {
+            background-color:violet;
+        }
+    </style>
+</head>
+<body bgcolor=green>
+    <p contenteditable="true">
+        lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sapiente maxime quibusdam dolorum eveniet aliquid aspernatur, expedita odio omnis debitis vitae. Dolores provident qui nobis repellendus nihil totam reiciendis? Odit.
+    </p>
+    <p>
+        lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sapiente maxime quibusdam dolorum eveniet aliquid aspernatur, expedita odio omnis debitis vitae. Dolores provident qui nobis repellendus nihil totam reiciendis? Odit.
+    </p>
+    <p>
+        lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sapiente maxime quibusdam dolorum eveniet aliquid aspernatur, expedita odio omnis debitis vitae. Dolores provident qui nobis repellendus nihil totam reiciendis? Odit.
+    </p>
+</body>
+</html>

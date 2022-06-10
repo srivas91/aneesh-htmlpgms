@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        .req::after
+        {
+            content:'*';
+            color:red;
+        }
+        input[type="text"]:focus
+        {
+            background-color: yellow;
+            border-width: 5px;
+            border-style: solid;
+            border-color: purple;
+            color:blue;
+        }
+        input[type="password"]:focus
+        {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body bgcolor="cyan">
+    <form action="register.php" method="get">
+        <label for="username" class="req">username:</label><input type="text" name="username" required autocomplete="on"><br/>
+        <label for="password" class="req">password:</label><input type="password" name="password" required><br/>
+        <label for="repass" class="req">re password:</label><input type="password" name="repass" required><br/>
+        <label>mobile number:</label><input type="text" required maxlength="10" pattern="[7|8|9]{1}[0-9]{9}"><br/>
+        age: <input type="number"><br/>
+        <input type="submit" value="register">
+        <input type="reset" value="cancel">
+    </form>
+</body>
+</html>
