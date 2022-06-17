@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cls1
+        {
+            color:blue;
+        }
+        .cls2
+        {
+            border:5px ridge purple;
+        }
+        .cls3
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="cls3">today is friday</h3>
+    <script>
+        var s=document.getElementsByTagName("h3");
+        console.log(s[0]);
+        s[0].classList.add('cls1');
+        s[0].classList.add('cls2');
+        s[0].classList.remove('cls3');
+     console.log(s[0].classList.contains('cls1'));
+    </script>
+</body>
+</html>

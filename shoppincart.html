@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body 
+        {
+            background: linear-gradient(to right,orange,pink,green);
+        }
+        .fa-cart-shopping{
+            color:yellowgreen;
+        }
+        #id1
+        {
+            margin-top:-25px;
+            margin-left:130px;
+            color:purple;
+        }
+    </style>
+</head>
+<body>
+    Aneesh Shopping
+    <!-- <i class="fa-solid fa-plus-large"></i> -->
+    <i class="fa-solid fa-cart-shopping"></i><h5 id="id1"></h5>
+    <button onclick="incCounter()"><i class="fa-solid fa-plus" ></i></button>
+    <button onclick="decCounter()"><i class="fa-solid fa-minus"></i></button>
+    <script>
+        var s=document.querySelector("#id1");
+        var count=0;
+        s.innerHTML=0
+        incCounter=()=>{count=count+1;
+                s.innerHTML=count;}
+        decCounter=()=>{count=count-1;
+            if(count<0)
+            {
+                alert("count cannot be lesser than zero");
+                count=0;
+            }
+            s.innerHTML=count;} 
+        
+    </script>
+</body>
+</html>
